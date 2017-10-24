@@ -502,7 +502,7 @@ button {
 	}
 
 /* ad样式 */
-#ad {
+#other {
     overflow: hidden;	/* 动画关闭广告后内容随之隐藏 */
     background: rgba(0,0,0,.35);
 
@@ -511,36 +511,36 @@ button {
             box-shadow: 0 4px 16px 3px #222 inset;
 }
 
-#ad .frame {
+#other .frame {
 	overflow: auto;
     padding: 130px 220px;
 }
 
-.ad-text {
+.other-text {
 	float: left;
     max-width: 550px;
     
     text-shadow: 2px 2px 10px #666;
 }
 
-.ad-text > h2 {
+.other-text > h2 {
     margin-top: 22px;
     letter-spacing: 4px;
     color: #eee;
 }
 
-.ad-text > p {
+.other-text > p {
     margin: 40px 0;
     line-height: 28px;
     letter-spacing: 3px;
 }
 
-.ad-button {
+.other-button {
 	float: right;
 	width: 250px;
 }
 
-.ad-button > button {
+.other-button > button {
     font: normal 18px/42px "Arial";
     width: 246px;
     margin: 16px 0;
@@ -556,33 +556,33 @@ button {
             box-shadow: 2px 2px 10px #444;
 }
 
-.ad-button .get-me {
+.other-button .get-me {
     border: 2px solid #ed4933;
     background: #ed4933;
 }
 
-.ad-button .get-out {
+.other-button .get-out {
     border: 2px solid #ddd;
     background: none;
 }
 
 	@media screen and (max-width: 1300px) {
-		.ad-text,
-		.ad-button{
+		.other-text,
+		.other-button{
 			float: none;
 			width: 100%;
 			text-align: center;
 			margin: 0 auto;
 		}
 
-		.ad-button button{
+		.other-button button{
 			margin: 10px 20px;
 
 		}
 	}
 
 	@media screen and (max-width: 1050px) {
-		#ad .frame{
+		#other .frame{
 			padding: 100px 20px;
 		}
 	}

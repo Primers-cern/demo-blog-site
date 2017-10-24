@@ -46,7 +46,7 @@ window.onload = function() {
 
 	// 去除广告
 	$(".get-out").on("click", function() {
-		$("#ad").slideUp(800);
+		$("#other").slideUp(800);
 	});
 
 }
