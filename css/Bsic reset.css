@@ -1,0 +1,19 @@
+﻿/*Bsic reset*/
+html{color:#000;background:#fff;}
+body{font: 12px/1.5 Arial,宋体,sans-serif;}
+body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li,pre,
+fieldset,legend,input,textarea,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+ul,li{list-style:none;}
+fieldset,img{border:none;}
+a{text-decretiom:none;color: #333333;}
+a:hover{text-decoration:inline;color: #cc0000;}
+input:focus{outline: none;}
+/*旧浏览器html新增的标签无法识别块状显示*/
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+
+body{font-family: "微软雅黑";}
+div,img,ul,li,h1,h2,h3,h4,p,a{margin: 0;padding: 0;}
+button{border: none;font-family: "微软雅黑";}
+li{list-style: none;}
+a{text-decoration: none;color: #000;font-family: "微软雅黑";}
