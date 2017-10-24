@@ -32,14 +32,9 @@ window.onload = function() {
 
 	// 自动翻过封面
 	$(".rollmore").on("click" , function() {
-		if (navigator.userAgent.indexOf("Edge") > -1) {
-			$ele = $("body");
-		} else {
-			$ele = $("html");
-		}
-		// 解决问题：在edge下，没法给html绑定animate或scrollTop
-		// 办法：判断是否为edge，edge的话绑定在body上。
-		$ele.animate({scrollTop: $(window).height() -50},600);
+
+		$("html, body").animate({scrollTop: $(window).height() -50},600);
+		// Chrome和FF在这个动画上有冲突。需要html和body同时加上。
 	});
 
 
