@@ -308,7 +308,7 @@ button {
 }
 
 .art .underline {
-    width: 450px;
+    max-width: 450px;
     height: 2px;
     margin: 28px auto 10px auto;
     background: rgba(0,0,0,.08);
@@ -575,15 +575,15 @@ button {
 			margin: 0 auto;
 		}
 
-		.other-button button{
+		.other-button > button{
 			margin: 10px 20px;
-
+            width: 200px;
 		}
 	}
 
 	@media screen and (max-width: 1050px) {
 		#other .frame{
-			padding: 100px 20px;
+			padding: 100px 10px;
 		}
 	}
 
