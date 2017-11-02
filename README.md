@@ -2,25 +2,25 @@
 <br/>
 Site of this item ————  http://primerscern.xyz/demo-blog-site
 <br/>
-***
-## The problem solved
+
+# The problem solved
 - IE下，页面滚动时，背景图片跟着晃
 - 浏览器间 scrollTop 兼容问题
 <br/>
 
-### IE下，页面滚动时，背景图片跟着晃
+## IE下，页面滚动时，背景图片跟着晃
 
-##### 浏览器情况
+#### 浏览器情况
 出现在Edge以及IE9+上（当时网页只兼容到ie9，所以9-的没看）
 我平时用的Chrome上没问题，QQ浏览器下的IE兼容模式也没问题。
 
-##### 详情描述
+#### 详情描述
 背景图片是设置在body下的一个大容器里的（几乎占据整个body）。
 然后这个背景图片**设置了fixed属性**（验证了是主要原因），取消就没事。
 当网页滚动的时候，图片并没有fixed不动，而是**一截一截的变换位置**。
 导致看起来的视觉效果就图片一直在**上下抖动**。
 
-##### 肤浅地分析原因
+#### 肤浅地分析原因
 根据这个效果的视觉特点观察得到，
 图片并没有fixed不动，而是随着网页向上滚，
 然后短时间内，又重新渲染定位到fixed的位置，导致了这种视觉效果。
@@ -56,7 +56,7 @@ Site of this item ————  http://primerscern.xyz/demo-blog-site
 
 第十一行 // 去除滚轮的默认动作并重新绑定动作。
 ```
-##### 其实刨去皮肉，得到的骨架就是
+#### 其实刨去皮肉，得到的骨架就是
 ```
 - if (判定针对的浏览器—true/false) {
 -       document.body.addEventListener("mousewheel", function(){
@@ -74,7 +74,7 @@ Site of this item ————  http://primerscern.xyz/demo-blog-site
 ##### 待我深入了解后，回来补充。
 <br/>
 
-### 浏览器间 scrollTop 兼容问题
+## 浏览器间 scrollTop 兼容问题
 
 - #### 背景
   就是我那个自制博客的项目，在封面有个按钮，
@@ -98,7 +98,7 @@ Site of this item ————  http://primerscern.xyz/demo-blog-site
   点击时，**同时把 html 和 body 都选择上**，最终解决问题。
 
 ****
-- ##### 小探究
+- #### 小探究
   一开始以为是 animate 的问题，但是试验后排除了。
 
   然后我就用了各个浏览器试了一遍（都是用的最新版17年10月）
