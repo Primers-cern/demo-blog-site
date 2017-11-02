@@ -2,7 +2,7 @@
 <br/>
 Site of this item ————  http://primerscern.xyz/demo-blog-site
 <br/>
-
+***
 ## The problem solved
 - IE下，页面滚动时，背景图片跟着晃
 - 浏览器间 scrollTop 兼容问题
