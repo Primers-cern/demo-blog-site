@@ -2,14 +2,14 @@
 <br/>
 Site of this item ————  http://primerscern.xyz/demo-blog-site
 <br/>
-***
+*********
 ## The problem solved
 - IE下，页面滚动时，背景图片跟着晃
 - 浏览器间 scrollTop 兼容问题
 <br/>
-***
+~~~~~~~~~~
 ### IE下，页面滚动时，背景图片跟着晃
-***
+~~~~~~~~~~
 ##### 浏览器情况
 出现在Edge以及IE9+上（当时网页只兼容到ie9，所以9-的没看）
 我平时用的Chrome上没问题，QQ浏览器下的IE兼容模式也没问题。
